@@ -4,8 +4,6 @@ __pycache__/
 .venv/
 venv/
 
-models/*.pkl
-
 .streamlit/
 
 .idea/
