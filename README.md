@@ -4,7 +4,15 @@
 
 This project predicts the expected delivery time of courier shipments using a Machine Learning model trained on historical delivery data.
 
-The application provides users with an estimated delivery time, expected delivery date, and a confidence score based on shipment details.
+The application provides users with an estimated delivery time, expected delivery date, and a delivery confidence score based on shipment details.
+
+---
+
+## 🌐 Live Demo
+
+🚀 **Streamlit Web App**
+
+https://courier-delivery-time-prediction-wxf2g9im9oyzf6ttz2jsbd.streamlit.app/
 
 ---
 
@@ -42,22 +50,55 @@ The application provides users with an estimated delivery time, expected deliver
 
 - 📅 Estimated Delivery Time
 - 📆 Expected Delivery Date
-- 🎯 Confidence Score
+- 🎯 Delivery Confidence Score
 - 🚚 Delivery Status
 
 ---
 
 ## 🤖 Machine Learning Model
 
-Algorithm Used:
+**Algorithm Used**
 
-**Random Forest Regressor**
+Random Forest Regressor
+
+### Why Random Forest?
+
+Random Forest Regressor was selected because it:
+
+- Handles nonlinear relationships effectively.
+- Reduces overfitting through ensemble learning.
+- Provides reliable predictions on structured datasets.
+- Performs well for regression-based prediction problems.
+
+---
+
+## ⚙️ Prediction Method
+
+The model predicts courier delivery time using the following inputs:
+
+- Pickup Location
+- Destination
+- Courier Type
+- Historical Delivery Days
+
+The predicted delivery time is then used to calculate the expected delivery date.
+
+---
+
+## 🎯 Delivery Confidence Score
+
+The Delivery Confidence Score displayed in the application is a custom reliability indicator.
+
+It is calculated by comparing the predicted delivery time with the historical delivery time provided by the user.
+
+**Note:**  
+This score is a custom reliability metric designed to improve user understanding and should not be interpreted as the native confidence produced by the Random Forest model.
 
 ---
 
 ## 📊 Dashboard
 
-Power BI Dashboard includes:
+The Power BI Dashboard includes:
 
 - Delivery Overview
 - Delivery Analysis
@@ -67,13 +108,19 @@ Power BI Dashboard includes:
 
 ## ▶️ How to Run
 
-Install dependencies:
+Clone the repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+```
+
+Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run the application:
+Run the application
 
 ```bash
 streamlit run app.py
@@ -99,21 +146,47 @@ Courier_Delivery_Prediction/
 
 ---
 
-## 👩‍💻 Developer
+## 📸 Project Features
 
-**Devadharshini**
+✅ Machine Learning-Based Delivery Prediction
 
-Final Year B.Tech Information Technology Student
+✅ Expected Delivery Date Estimation
+
+✅ Delivery Confidence Score
+
+✅ Interactive Streamlit Web Application
+
+✅ Power BI Dashboard
+
+✅ User-Friendly Interface
 
 ---
 
-## ⭐ Future Enhancements
+## ⚠️ Limitations
+
+The model predicts delivery time using the available dataset features only.
+
+Factors such as:
+
+- Weather
+- Traffic
+- Holidays
+- Package Weight
+- Road Conditions
+
+are not included in the dataset and therefore are not considered during prediction.
+
+---
+
+## 🚀 Future Enhancements
 
 - Live Shipment Tracking
 - Weather-Based Prediction
 - Traffic Analysis
 - Interactive Maps
 - Real-Time Courier API Integration
+
+---
 
 # 📷 Project Screenshots
 
@@ -160,3 +233,28 @@ Final Year B.Tech Information Technology Student
 ### Prediction Dashboard
 
 ![Prediction Dashboard](screenshots/prediction_dashboard.png)
+
+---
+
+## 👩‍💻 Developer
+
+**Devadharshini K**
+
+Final Year B.Tech Information Technology Student
+
+### Skills
+
+- Python
+- Machine Learning
+- Data Analysis
+- Streamlit
+- Power BI
+- SQL
+- Pandas
+- Scikit-Learn
+
+---
+
+## ⭐ If you found this project useful
+
+Please consider giving this repository a ⭐ on GitHub.
